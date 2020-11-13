@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="830.4,2849.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="830.4,3052.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
       <x:String>System.Activities</x:String>
@@ -47,7 +47,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="686.4,2784.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="686.4,2948" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Regex" />
       <Variable x:TypeArguments="x:String" Name="UserChoice" />
@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to show:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
+    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to showwwww:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[UserChoice]</OutArgument>
       </ui:InputDialog.Result>
@@ -127,8 +127,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;This is for show in GIT example...........................&quot;]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="644.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="This is for GITttttttttttttttt" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;This is for show in GIT example.eeeeeee..........................&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;GIT&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;GIT222&quot;]" />
     <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" sap2010:Annotation.AnnotationText="Open in Internet Explorer the LandingPage.html page (which you can find in the root folder of this project)" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="644.8,1728" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" UiBrowser="[Browser]" Url="[Path.GetFullPath(&quot;custom-input&quot;)+&quot;\LandingPage.html&quot;]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
