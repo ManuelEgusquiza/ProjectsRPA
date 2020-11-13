@@ -1,0 +1,255 @@
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Selectors</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<style>
+		
+		
+		
+		
+			body {
+				font-family: Verdana;
+				background-color: white;
+			}
+			#header {
+				height: 10em;
+				background-color: #0085c7;
+			}
+			form {
+				margin-left: 20%;
+				margin-right: 20%;
+				background-color: white;
+				margin-top: -4em;
+				border: 1px solid lightgray;
+				padding: 1em;
+                min-width: 650px;
+			}
+			h2 {
+				font-weight: normal;
+			}
+			fieldset {
+				border-width: 0;
+				margin-bottom: 1.2em;
+			}
+			input[type=text], input[type=text]:focus {
+				border-width: 0 0 1px 0;
+				width: 15em;
+				margin-top: 0.2em;
+			    outline: none !important;
+			    font-size: 0.9em;
+
+			}
+			legend {
+			}
+			.btn-primary {
+				margin: 1em;
+				background-color: #0085ca;
+				font-size: 1.3em;
+				color: white;
+			}
+			
+			h4 {
+				font-size: 16px !important;
+			}
+			
+			h5 {
+				font-size: 12px !important;
+			}
+			
+			h6 {
+				font-size: 11px !important;
+			}
+
+            #optionsContainer {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .option-holder {
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 140px;
+                width: 300px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .option-holder:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: transform .5s ease;
+            }
+
+            .option-text {
+                color: white;
+                text-align: center;
+                z-index: 9;
+                font-size: 16px;
+                padding: 0 10px;
+            }
+
+            #first {
+                background-image: url('tour.png');
+            }
+
+            #second {
+                background-image: url('book.png');
+            }
+
+            #third {
+                background-image: url('orch.png');
+            }
+			#header {
+				background-image: url('uiDesign_no.png');
+
+			}
+
+            .option-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #000000;
+                opacity: 0.5;
+            }
+			
+			
+		</style>
+		<script src="jquery.js"></script>
+		
+		
+		<script src="bootstrap.js"></script>
+		
+		<script>
+		
+			Array.prototype.remove = function() {
+				var what, a = arguments, L = a.length, ax;
+				while (L && this.length) {
+					what = a[--L];
+					while ((ax = this.indexOf(what)) !== -1) {
+						this.splice(ax, 1);
+					}
+				}
+				return this;
+			};
+			var myArray = [
+			  "+40777164123",
+			  "robot.selectors@uipath.com",
+			  "https://www.uipath.com/"
+			];
+			var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+			myArray.remove(randomItem);
+			var randomItem2 = myArray[Math.floor(Math.random()*myArray.length)];
+			myArray.remove(randomItem2);
+			var randomItem3 = myArray[Math.floor(Math.random()*myArray.length)];
+			$(document).ready(function() {$("#firstValue").html(randomItem.toString());});
+			$(document).ready(function() {$("#secondValue").html(randomItem2.toString());});
+			$(document).ready(function() {$("#thirdValue").html(randomItem3.toString());});
+</script>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+        <form target="_self"
+              id="bootstrapForm"
+              method="POST">
+            <fieldset>
+                <div>
+                    <h2 style="display: inline;">Robot Contact</h2>
+                    <img style="float: right;" src="https://www.uipath.com/hubfs/Valentin/Brand-Kit/logos/UiPath-full-logo.svg?v=2.0" />
+                </div>
+                <div style="height: 20px;"></div>
+
+				</fieldset>
+
+            <div id="optionsContainer">
+                <div id="first" class="option-holder">
+                    <div class="option-overlay"></div>
+                    <div class="option-text" first.value>
+						<p id="firstValue"></p>
+                    </div>
+                </div>
+                <div id="second" class="option-holder">
+                    <div class="option-overlay"></div>
+                    <div class="option-text">
+						<p id="secondValue"></p>
+                    </div>
+                </div>
+                <div id="third" class="option-holder">
+                    <div class="option-overlay"></div>
+                    <div class="option-text">
+						<p id="thirdValue"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 40px;"></div>
+			</form>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<form target="_self"
+              id="bootstrapForm"
+              method="POST">
+            <fieldset>
+                <div>
+                    <h2 style="display: inline;">Dowload Reports</h2>
+                    <img style="float: right;" src="https://www.uipath.com/hubfs/Valentin/Brand-Kit/logos/UiPath-full-logo.svg?v=2.0" />
+                </div>
+                <div style="height: 20px;"></div>
+                <h4>Please select:</h4>
+
+            </fieldset>
+			<div id="optionsContainer">
+				<div class="row">
+                    <div class="col-md-4 col-sm-12">
+
+                                <div class="row">
+                                    <a href="Report.zip" download>MonthlyReportDepIT</a>
+                                </div>
+                                <div class="row">
+                                    <a href="Report.zip" download>DailyReportDepFinace</a>
+                                </div>
+                                <div class="row">
+                                   <a href="Report.zip" download>YearlyReportReportDepHR</a>	
+                                </div>
+                                <div class="row">
+                                   <a href="Report.zip" download>BiweeklyReportAllCompany</a>
+                                </div>
+                        </div>
+                    </div><div class="col-md-4 col-sm-12">
+
+                                <div class="row">
+                                    <a href="Report.zip" download>OctoberReportDepIT</a>
+                                </div>
+                                <div class="row">
+                                    <a href="Report.zip" download>SeptemberReportDepFinace</a>
+                                </div>
+                                <div class="row">
+                                   <a href="Report.zip" download>DecemberReportDepHR</a>
+                                </div>
+                                <div class="row">
+                                   <a href="Report.zip" download>DecemberReportAllCompany</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </form>
+		
+	</body>
+</html>
