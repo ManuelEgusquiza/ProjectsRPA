@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to showwwwwwwwww:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
+    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to showww:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[UserChoice]</OutArgument>
       </ui:InputDialog.Result>
@@ -76,7 +76,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="What kind of information the user has chosen" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,124" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;User Choice: &quot; + UserChoice.ToString]">
+    <ui:LogMessage sap2010:Annotation.AnnotationText="What kind of information the user has chosen" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="644.8,124" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Userrrrr Choice: &quot; + UserChoice.ToString]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
