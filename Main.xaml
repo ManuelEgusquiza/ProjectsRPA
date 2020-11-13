@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to showwwww:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
+    <ui:InputDialog sap2010:Annotation.AnnotationText="The window through which we choose what kind of information to collect from the page." DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="644.8,136.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Choose the type of information you want to showwwwwwwwww:" Options="[{“Phone”,“Email”,“URL”}]" Title="Contact">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[UserChoice]</OutArgument>
       </ui:InputDialog.Result>
